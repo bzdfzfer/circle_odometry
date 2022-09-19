@@ -39,7 +39,6 @@ include_directories(
   ${OPENCV_INCLUDE_DIRS}
   ${EIGEN3_INCLUDE_DIR}
   ${PCL_INCLUDE_DIRS}
-  ${CERES_INCLUDE_DIRS}
 )
 
 # LIBRARIES
