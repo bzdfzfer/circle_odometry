@@ -1,0 +1,36 @@
+# line extraction parameters.
+m_least_thresh: 0.04 # 3 sigma rule.
+m_min_length: 0.25
+m_predict_distance: 0.03
+m_seed_pts_num: 3
+m_min_line_points_num: 6
+config_sincos_flag: true
+m_missing_pts_tolerance: 3
+m_gap_distance_tolerance: 0.3
+
+# laser scanner parameters.
+#####################back, front, deutsches
+m_laser_points_num: 476 #476 #503 # 1079
+m_laser_angle_min: -2.14675498009 #-2.14675498009 #-2.27765464783 # -2.35183119774
+m_laser_angle_max: 2.10312175751 #1.98967528343 #2.10312175751 # 2.35183119774
+m_laser_angle_incre: 0.00872664619237 #0.00872664619237 #0.00436332309619
+m_laser_range_min: 0.0
+m_laser_range_max: 20.0
+
+
+# matching parameters.
+plane_pairing_thresh: 1.0
+plane_pairing_intersection_ratio: 0.5
+
+hist_bin_width: 2.0
+hist_bin_min: -90.0
+hist_bin_max: 90.0
+hist_search_window: 20
+hist_absorb_bin_num: 3
+plane_similar_ratio: 4.0 # deg.
+
+dist_noise_bound: 0.04
+angular_noise_bound: 2.5 # deg.
+
+eigen_threshold1: 0.5
+eigen_threshold2: 0.5

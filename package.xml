@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>circle_odometry</name>
+  <version>0.0.0</version>
+  <description>The circle_odometry package</description>
+
+  <maintainer email="dxg9403@gmail.com">xiaoguo</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>rosbag</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>sparse_block_matrix</build_depend>
+  <build_depend>libpcl-all-dev</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>rospy</build_export_depend>
+  <build_export_depend>rosbag</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>rosbag</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>libpcl-all</exec_depend>
+
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>

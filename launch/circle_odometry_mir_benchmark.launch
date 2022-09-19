@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+
+    <arg name="config_file" default="/home/bzdfzfer/circle_odom_clean_ws/src/circle_odometry/config/mir-config.yaml"/>
+
+    <arg name="scene_name" default="mir" />
+    <arg name="exp_Hz" default="1" />
+    
+    <param name="/use_sim_time" value="true" />
+
+
+    <node name="circle_odometry_node" pkg="circle_odometry" type="circle_odometry_node"
+    args="$(arg config_file)" output="screen">
+        <remap from="/scan" to="/f_scan" />
+        <param name="timing_file_path" value="/home/bzdfzfer/circle_odom_clean_ws/"/>
+        <param name="timing_file_name" value="$(arg scene_name)"/>
+        <param name="data_rate" value="1" />
+        <param name="exp_rate" value="$(arg exp_Hz)" />
+        <param name="save_results_flag" value="false" />
+    </node>
+
+    <node pkg="tf" type="static_transform_publisher" name="laser2last_tf"  args="0 0 2 0 0 0 /laser2 /laser2_last 10" />
+
+</launch>

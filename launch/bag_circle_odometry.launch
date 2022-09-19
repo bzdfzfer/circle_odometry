@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+
+	<arg name="config_file" default="/home/bzdfzfer/circle_odom_clean_ws/src/circle_odometry/config/pepperl-config.yaml"/>
+    <arg name="bag_file" default="/home/bzdfzfer/laser_odometry/src/circle_odometry/data/my_datasets/scene2.bag" />
+    <arg name="outpath" default="/home/bzdfzfer/circle_odom_clean_ws/" />
+    <arg name="scene_name" default="scene1" />
+    <arg name="exp_Hz" default="15" />
+    
+    <param name="/use_sim_time" value="true" />
+    
+    <node name="bag_circle_odometry_node" pkg="circle_odometry" type="rosbag_circle_odometry_node"
+    args="$(arg config_file)" output="screen">
+        <param name="bag_filepath" value="$(arg bag_file)" />
+        <param name="timing_file_path" value="$(arg outpath)"/>
+        <param name="timing_file_name" value="$(arg scene_name)"/>
+        <param name="data_rate" value="15" />
+        <param name="exp_rate" value="$(arg exp_Hz)" />
+        <param name="save_results_flag" value="false" />        
+    </node>
+
+    <node pkg="tf" type="static_transform_publisher" name="laser2last_tf"  args="0 0 2 0 0 0 /laser2 /laser2_last 10" />
+
+</launch>
