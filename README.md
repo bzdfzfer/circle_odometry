@@ -1,4 +1,4 @@
-﻿﻿# circle_odometry
+﻿﻿﻿# circle_odometry
 
 This repo is for our IEEE/ASME Trans. Mechatronics submission of "Circle fit matching: a fast analytical laser scan matching method for 2D laser scanners".
 
@@ -51,4 +51,9 @@ rosbag play scene1.bag --clock
 #### Degneration processing results
 
 ![](pics/Degeneration_processing.png)
+
+## Paper Citation:
+
+* Xiaoguo D, Jiayuan D, Chenpeng Y, Xiaochuan Y, et al., Circle fit matching:  A Fast Analytical Laser Scan
+  Matching Method for 2D Laser Scanners, IEEE/ASME Transactions on Mechatronics. (**Under review**)
 
