@@ -56,6 +56,6 @@ rosbag play scene1.bag --clock
 
 ## Paper Citation:
 
-* Xiaoguo Du, et al., Circle fit matching:  A Fast Analytical Laser Scan
+* Anonymous for review, Circle fit matching:  A Fast Analytical Laser Scan
   Matching Method for 2D Laser Scanners, IEEE Transactions on Instrumentation and Measurement. (**Under review**)
 
