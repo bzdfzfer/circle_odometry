@@ -57,5 +57,5 @@ rosbag play scene1.bag --clock
 ## Paper Citation:
 
 * Anonymous for review, Circle fit matching:  A Fast Analytical Laser Scan
-  Matching Method for 2D Laser Scanners, IEEE Transactions on Instrumentation and Measurement. (**Accepted**)
+  Matching Method for 2D Laser Scanners, IEEE Transactions on Instrumentation and Measurement. (**Accepted**) [Early Access Version](https://ieeexplore.ieee.org/document/10711899)
 
